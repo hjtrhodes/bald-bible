@@ -1,3 +1,3 @@
-const baseUrl = "https://baldbible-backend.onrender.com"
+const baseUrl = "https://localhost:8080/"
 
 export default baseUrl
