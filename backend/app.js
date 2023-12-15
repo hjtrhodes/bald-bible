@@ -1,9 +1,12 @@
 const express = require('express'); 
 const mongoose = require('mongoose'); 
 const path = require('path'); // import path module, to deal with file paths
+require('dotenv').config();
 
-const { password }  = require('./config'); // import the password property of the object exported from config.js
-// the password in config.js is the password for the user pablojoyce, which has read and write access to the database
+// const { password }  = require('./config'); // import the password property of the object exported from config.js
+// // the password in config.js is the password for the user pablojoyce, which has read and write access to the database
+
+const password = process.env.MONGO_PASSWORD;
 
 const imageRoutes = require('./routes/image'); // import the router object, which is exported from stuff.js
 const userRoutes = require('./routes/user'); // import the router object, which is exported from user.js
