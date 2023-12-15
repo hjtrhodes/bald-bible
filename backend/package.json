@@ -7,8 +7,8 @@
     "backend": "nodemon server.js",
     "start": "concurrently \"npm run backend\" \"cd ../frontend && npm run dev\"",
     "seed": "node ./seeds/seed.js",
-    "start:test": "MONGO_URL='test' npm start"
-
+    "start:test": "MONGO_URL='test' npm start",
+    "production": "node server.js"
   },
 
   "keywords": [],
