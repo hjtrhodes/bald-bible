@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SingleImage from '../SingleImage/SingleImage';
 
 
 const GetImages = ({ }) => {
@@ -23,11 +24,14 @@ const GetImages = ({ }) => {
     // } 
   }, [])
 
-
+console.log(images);
   
       return(
         <>
-        <div>{images.map(imgData => <img src={imgData.imageURL}></img>)}</div>
+        {/* <div>{images.map(imgData => <img src={imgData.imageURL}></img>)}</div> */}
+
+
+        <div>{images.map(imgData => <SingleImage imgUrl={imgData.imageURL} />)}</div>
         </>
       )
 }

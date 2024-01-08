@@ -1,0 +1,10 @@
+.singleImage {
+    object-fit: cover;
+    /* max-width: 350px; */
+    width: 25%;
+    min-height: 500px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px;
+    border-color: rgb(103, 3, 3);
+}
