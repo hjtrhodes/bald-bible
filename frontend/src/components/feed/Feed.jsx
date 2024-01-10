@@ -41,9 +41,11 @@ const Feed = () => {
       >
         <ImageList className="image-list" id="image-list" variant="masonry" cols={3} gap={0}>
           {images.map((item) => (
-            <ImageListItem key={item._id} id={`image-${item.img}`}className="image-column">
+            <ImageListItem key={item._id} id={`image-${item.img}`} className="image-column">
+              
               <img
-                src={`${item.imageUrl}`}
+                // src={`${item.imageUrl}`}
+                src={`${item.imageUrl.split('upload/').join('upload/w_450/')}`}
                 alt={item.title}
                 width={item.width}
                 height={item.height}
