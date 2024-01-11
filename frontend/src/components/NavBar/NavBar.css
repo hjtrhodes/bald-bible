@@ -4,8 +4,8 @@
   top: 0; /* Stick it to the top of the viewport */
   left: 0;
   right: 0;
-  background-color: transparent; /* Add a background color as needed */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle lift */
+  background-color: rgba(0, 0, 0, 0.1); /* Add a background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add a box shadow for a subtle lift */
   z-index: 1000;
   display: flex;
   justify-content: space-between;

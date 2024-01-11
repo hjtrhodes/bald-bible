@@ -34,11 +34,9 @@ const LikeAmountDisplay = (props) => {
 
     return (
         <div>
-            <small>
                 <strong>
                 {likesAmount} {likesAmount === 1 ? 'like' : 'likes'}
                 </strong>
-            </small>
         </div>
     );
 };
